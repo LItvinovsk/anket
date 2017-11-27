@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Blank</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+<body>
+	
+
+<div class="container">
+<div class="navbar"> <h2 style="text-decoration:  "> Анкета по оцінці роботи авторизованих сервісних центрів (СТМ)</h2></div>
+<form>
+  <div class="form-group">
+    <label class="col-form-label" for="formGroupExampleInput2">Дата:</label>
+    <input type="data"  id="dat" class="datepicker-here form-control" placeholder="дд/мм/гггг">
+  </div>
+  
+  <div class="form-group">
+    <label class="col-form-label" for="formGroupExampleInput2">Підприємець:</label>
+    <input type="text" class="form-control" id="cust" placeholder="Назва, юридична адреса">
+  </div>
+  
+  <div class="form-group">
+    <label class="col-form-label" for="formGroupExampleInput2">Група товарів: </label>
+		  <select class="form-control" id="gr" placeholder="оберіть з випадаючого списку">
+			<option selected disabled hidden style='display: none' value=''></option>
+			<option>Мобільні пристрої</option>
+			<option>ТБ</option>
+			<option>Аудіо</option>
+			<option>Побутова техніка</option>
+		  </select>
+  </div>
+ 
+   <div class="form-group">
+    <label class="col-form-label" for="formGroupExampleInput2">Тип проблеми, з яким Ви зіштовхуєтесь найчастіше:</label>
+		  <select class="form-control" id="pr" placeholder="оберіть з випадаючого списку">
+			<option selected disabled hidden style='display: none' value=''></option>
+			<option>Апаратний дефект або брак</option>
+			<option>Дефект програмного забезпечення</option>
+			<option>Запит на програмне забезпечення</option>
+			<option>Скарги на сервісне обслуговування</option>
+			<option>Інше (вказати)</option>
+		  </select>
+    <input type="text" class="form-control" id="other" placeholder="інше" style="display: none">
+  </div>
+  
+  <div class="form-group">
+    <label class="col-form-label" for="formGroupExampleInput2">Назва та адреса регіонального авторизованого сервісного центру з яким Ви працюєте на даний момент: </label>
+    <input type="text" class="form-control" id="cust" placeholder="">
+  </div>
+  
+  <div class="form-group">
+    <label class="col-form-label" for="formGroupExampleInput2">Мета заповнення</label>
+		  <select class="form-control" id="tar" placeholder="оберіть з випадаючого списку">
+			<option selected disabled hidden style='display: none' value=''></option>
+			<option>Покращення умов сервісного обслуговування</option>
+			<option>Зміна регіонального партнера по сервісному обслуговуванню </option>
+			<option>Сервісне обслуговування у Вашому регіоні повністю влаштовує Вас та Ваших клієнтів</option>
+		  </select>
+  </div>
+
+  <h4 style="text-decoration: underline " >Збір загальної інформації</h4> 
+  
+  <div class="form-group">
+    <label class="col-form-label" for="formGroupExampleInput2">1)	Вкажіть приблизну кількість звернень клієнтів за гарантійним сервісним обслуговуванням протягом місяця: </label>
+			<div class="form-check">
+			  <label class="form-check-label">
+				<input class="form-check-input" type="radio" name="exampleRadios" id="radios1" value="option1">
+				А) до 10 звернень
+			  </label>
+			</div>
+			<div class="form-check">
+			  <label class="form-check-label">
+				<input class="form-check-input" type="radio" name="exampleRadios" id="radios2" value="option2">
+				Б) 10-20 зверненьe
+			  </label>
+			</div>
+			<div class="form-check">
+			  <label class="form-check-label">
+				<input class="form-check-input" type="radio" name="exampleRadios" id="radios3" value="option3" >
+				В) 20-30 звернень
+			  </label>
+			</div>
+			<div class="form-check">
+			  <label class="form-check-label">
+				<input class="form-check-input" type="radio" name="exampleRadios" id="radios4" value="option4" >
+				Г) більше 30 звернень
+			  </label>
+			</div>
+  </div> 
+  
+  
+<div class="form-group">
+    <label class="col-form-label" for="formGroupExampleInput2">2)	Наскільки оперативно сервісні центри виконують ремонт техніки:</label>
+			<div class="form-check">
+			  <label class="form-check-label">
+				<input class="form-check-input" type="radio" name="exampleRadios" id="radios1" value="option1" >
+				А) протягом встановлених законом 14 днів
+			  </label>
+			</div>
+			<div class="form-check">
+			  <label class="form-check-label">
+				<input class="form-check-input" type="radio" name="exampleRadios" id="radios2" value="option2">
+				Б) від 14 до 20 днів
+			  </label>
+			</div>
+			<div class="form-check">
+			  <label class="form-check-label">
+				<input class="form-check-input" type="radio" name="exampleRadios" id="radios3" value="option3" >
+				В) від 20 до 30 днів
+			  </label>
+			</div>
+			<div class="form-check">
+			  <label class="form-check-label">
+				<input class="form-check-input" type="radio" name="exampleRadios" id="radios4" value="option4" >
+				Г) більше місяця
+			  </label>
+			</div>
+  </div> 
+
+<div class="form-group">
+    <label class="col-form-label" for="formGroupExampleInput2">3)	Найчастіше Ви отримуєте скарги по сервісному обслуговуванню від клієнтів на (можна обрати декілька варіантів відповідей):</label>
+		<div class="form-check">
+		  <label class="form-check-label">
+			<input class="form-check-input" type="checkbox" value="">
+			А) неналежну якість ремонту
+		  </label>
+		</div>
+		<div class="form-check disabled">
+		  <label class="form-check-label">
+			<input class="form-check-input" type="checkbox" value="">
+			Б) недотримання термінів гарантійного ремонту
+		  </label>
+		</div>
+		<div class="form-check">
+		  <label class="form-check-label">
+			<input class="form-check-input" type="checkbox" value="">
+			В) відсутність зворотного зв’язку та інформації про товар у ремонті
+		  </label>
+		</div>
+		<div class="form-check disabled">
+		  <label class="form-check-label">
+			<input class="form-check-input" type="checkbox" value="">
+			Г) Не отримую скарг
+		  </label>
+		</div>
+		<div class="form-check disabled">
+		  <label class="form-check-label">
+			<input class="form-check-input" type="checkbox" value="">
+			Д) Інше (вказати) <input type="text" class="form-control" id="ts" placeholder="інше">
+		  </label>
+		</div>			
+  </div>   
+  
+<div class="form-group">
+    <label class="col-form-label" for="formGroupExampleInput2">4)	Дайте оцінку рівню якості обслуговування продукції ТМ ERGO регіональним авторизованим сервісним центром:</label>
+			<div class="form-check">
+			  <label class="form-check-label">
+				<input class="form-check-input" type="radio" name="exampleRadios" id="radios1" value="option1">
+				А) відмінно
+			  </label>
+			</div>
+			<div class="form-check">
+			  <label class="form-check-label">
+				<input class="form-check-input" type="radio" name="exampleRadios" id="radios2" value="option2">
+				Б) добре
+			  </label>
+			</div>
+			<div class="form-check">
+			  <label class="form-check-label">
+				<input class="form-check-input" type="radio" name="exampleRadios" id="radios3" value="option3" >
+				В) задовільно
+			  </label>
+			</div>
+			<div class="form-check">
+			  <label class="form-check-label">
+				<input class="form-check-input" type="radio" name="exampleRadios" id="radios4" value="option4" >
+				Г) незадовільно
+			  </label>
+			</div>
+  </div> 
+  
+<div id="p1" style="display: none">
+  
+    <h3 style="text-decoration: underline; margin-top: 5% " >«Покращення умов сервісного обслуговування»</h3> 
+	
+<div class="form-group">
+    <label class="col-form-label" for="formGroupExampleInput2">1)	Чи порекомендували би Ви іншим звернутись до даного авторизованого сервісного центру?</label>
+			<div class="form-check">
+			  <label class="form-check-label">
+				<input class="form-check-input" type="radio" name="exampleRadios" id="radios1" value="option1" >
+				А) так
+			  </label>
+			</div>
+			<div class="form-check">
+			  <label class="form-check-label">
+				<input class="form-check-input" type="radio" name="exampleRadios" id="radios2" value="option2">
+				Б) ні
+			  </label>
+			</div>
+			<div class="form-check">
+			  <label class="form-check-label">
+				<input class="form-check-input" type="radio" name="exampleRadios" id="radios3" value="option3" >
+				В) важко відповісти
+			  </label>
+			</div>
+		<div class="form-check disabled" >
+			  <label class="form-check-label">
+			<input class="form-check-input" type="checkbox" value="" disabled>
+			Обґрунтуйте свою відповідь:  <input type="text" class="form-control" id="ts" placeholder="">
+			  </label>
+		</div>	
+  </div> 	
+	
+	
+	
+	
+<div class="form-group">
+    <label class="col-form-label" for="formGroupExampleInput2">2)	Вкажіть та обґрунтуйте Ваші побажання стосовно роботи авторизованого сервісного центру (можна обрати декілька варіантів відповідей):</label>
+		<div class="form-check">
+		  <label class="form-check-label">
+			<input class="form-check-input" type="checkbox" value="">
+			А) терміни гарантійного обслуговування
+		  </label>
+		</div>
+		<div class="form-check disabled">
+		  <label class="form-check-label">
+			<input class="form-check-input" type="checkbox" value="">
+			Б) якість послуг
+		  </label>
+		</div>
+		<div class="form-check">
+		  <label class="form-check-label">
+			<input class="form-check-input" type="checkbox" value="">
+			В) доступність інформації для клієнта
+		  </label>
+		</div>
+		<div class="form-check disabled">
+		  <label class="form-check-label">
+			<input class="form-check-input" type="checkbox" value="">
+			Г) зворотний зв’язок із клієнтом
+		  </label>
+		</div>
+		<div class="form-check disabled">
+		  <label class="form-check-label">
+			<input class="form-check-input" type="checkbox" value="">
+			Д) Інше (вказати) <input type="text" class="form-control" id="ts" placeholder="інше">
+		  </label>
+		</div>			
+  </div> 
+ </div> 
+ 
+<div id="p2" style="display: none">
+
+    <h3 style="text-decoration: underline; margin-top: 5% " >«Зміна регіонального партнера по сервісному обслуговуванню»</h3> 
+  <div class="form-group">
+    <label class="col-form-label" for="formGroupExampleInput2">1)	Вас не влаштовує існуючий партнер по сервісному обслуговуванню, тому що (вказати)</label>
+    <input type="text" class="form-control" id="cust" placeholder="">
+  </div>	
+  <div class="form-group">
+    <label class="col-form-label" for="formGroupExampleInput2">2)	Чи могли би Ви порекомендувати сервісний центр у Вашому регіоні з кращими умовами обслуговування? </label>
+    <input type="text" class="form-control" id="cust" placeholder="">
+  </div>	
+  <div class="form-group">
+    <label class="col-form-label" for="formGroupExampleInput2">3)	Як Ви дізнались про вказаний Вами сервісний центр? </label>
+    <input type="text" class="form-control" id="cust" placeholder="">
+  </div>
+  <div class="form-group">
+    <label class="col-form-label" for="formGroupExampleInput2">4)	Чому Ви хотіли би співпрацювати саме з вказаним Вами сервісним центром?</label>
+    <input type="text" class="form-control" id="cust" placeholder="">
+  </div> 
+</div>
+
+<button type="button" class="btn btn-success">Відіслати дані анкети</button>
+
+
+<div class="navbar"> <h2 style="text-decoration: underline; text-align: center "> Дякуємо Вам за приділений час! Сподіваємось на подальше продуктивне співробітництво!</h2></div>	  
+</form>	
+</div>	
+
+</body>
+	<script src="./src/main.js"></script>
+	<script src="./src/datepicker.js"></script>
+	<link href="./src/main.css" rel="stylesheet">
+	<link href="./src/datepicker.min.css" rel="stylesheet">
+</html>

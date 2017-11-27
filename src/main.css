@@ -1,0 +1,22 @@
+#dat{
+	width: 13%
+}
+#cust, #other, #tar{
+	width: 70%
+}
+#gr{
+	width: 30%
+}
+#pr{
+	width: 35%
+}
+.form-group{
+	margin-bottom: 1rem;
+	display: block;
+}
+.form-check{
+	margin-left: 5%;
+}
+#ts{
+	width: 300%
+}
